@@ -1,1 +1,50 @@
+<!-- "!" + tab sets up pg in vs code for html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Helpline</title>
+</head>
+<body>
+    <h1>Are you struggling in your dating life?</h1>
+    <h1>Do you need a little inspirtation?</h1>
+    <h1>If you are ready to change your fate. Then follow the next few instructions!</h1>
+    
+    <label>Select a theme </label> 
+    <select name="Option" id="Option"> 
+        <option value="comp sci">Computer Science</option>
+        <option value="Medical School">Medical School</option>
+        <option value="Accounting">Accounting</option>
+    </select>
+    <button onclick="resultTheme()">Submit</button>
+    <h1 id="pickUpLine" ></h1>
+    <style>
+        body {background-color: rgb(172, 100, 160); text-align: center; color: floralwhite;}
+    </style>
+
+    <script>
+        function resultTheme(){
+            let Option = document.querySelector("#Option"); 
+            let pickUpLine = document.querySelector("#pickUpLine"); 
+            let output = Option.value; 
+      
+            //pickUpLine.innerHTML = "Done!" + " " + output;
+            
+            if(output=="Medical School"){
+                pickUpLine.innerHTML = "Did you cut my phrenic nerve? Because baby, you take my breath away."; 
+            }
+            else if(output=="comp sci"){
+                pickUpLine.innerHTML = "Are you a git repository? Because I want to commit to you."; 
+
+            }
+            else if(output="Accounting"){
+                pickUpLine.innerHTML = "Are you a bank loan because you got my interest.";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
 

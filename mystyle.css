@@ -1,0 +1,14 @@
+h1{
+    font-family: 'Apple Chancery', cursive;
+    font-size: 50px;
+}
+body {background-color: rgb(172, 100, 160); text-align: center; color: floralwhite;
+    font-family: 'Frauen',  monospace;
+    }
+label{
+    font-family: 'Frauen', monospace;
+}
+
+img{
+    float: right;
+}

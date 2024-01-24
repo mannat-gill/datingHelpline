@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dating Helpline</title>
 </head>
 <body>
-    <h1>Are you struggling in your dating life?</h1>
-    <h1>Do you need a little inspirtation?</h1>
-    <h1>If you are ready to change your fate. Then follow the next few instructions!</h1>
+    <h1>Dating Helpline</h1>
+    <h2>Are you struggling in your dating life?</h2>
+    <h2>Do you need a little inspirtation? Try these next time ;&#41;</h2>
+
     
     <label>Select a theme </label> 
     <select name="Option" id="Option"> 
@@ -19,14 +21,11 @@
     </select>
     <button onclick="resultTheme()">Submit</button>
     <h1 id="pickUpLine" ></h1>
-    <style>
-        body {background-color: rgb(172, 100, 160); text-align: center; color: floralwhite;}
-    </style>
+    <h1 id="insertGIF"> </h1>
+    <img id= "heartGIF" src="heart_gif.gif" style="display: none;">
+   
+   
 
-    <details>
-        <summary> About me </summary>
-        <p> hii my name is mannat :&#41;</p>
-    </details>
     <script>
         function resultTheme(){
             let Option = document.querySelector("#Option"); 
@@ -45,6 +44,7 @@
             else if(output="Accounting"){
                 pickUpLine.innerHTML = "Are you a bank loan because you got my interest.";
             }
+            document.getElementById("heartGIF").style.display = "block"; 
 
         }
 

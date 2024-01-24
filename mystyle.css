@@ -11,4 +11,8 @@ label{
 
 img{
     float: right;
+    max-width: 40%;
+    max-height: 40%;
+    height: auto;
+    width: auto\9;
 }

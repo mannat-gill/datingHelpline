@@ -16,3 +16,9 @@ img{
     height: auto;
     width: auto\9;
 }
+button{
+    font-family: 'Frauen', monospace;
+}
+select{
+    font-family: 'Frauen', monospace;
+}
